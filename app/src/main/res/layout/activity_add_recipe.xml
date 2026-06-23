@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#F5CB58"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="←"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="自定义菜谱"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="菜谱名称" android:textSize="14sp" android:textColor="#1A1A1A" android:layout_marginTop="12dp" />
+            <EditText
+                android:id="@+id/et_recipe_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_bg"
+                android:paddingHorizontal="14dp"
+                android:hint="例如：番茄炒蛋"
+                android:layout_marginTop="6dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="所用食材" android:textSize="14sp" android:textColor="#1A1A1A" android:layout_marginTop="16dp" />
+            <EditText
+                android:id="@+id/et_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_bg"
+                android:paddingHorizontal="14dp"
+                android:hint="例如：番茄、鸡蛋、盐"
+                android:layout_marginTop="6dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="烹饪时间（分钟）" android:textSize="14sp" android:textColor="#1A1A1A" android:layout_marginTop="16dp" />
+            <EditText
+                android:id="@+id/et_cooking_time"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_bg"
+                android:paddingHorizontal="14dp"
+                android:hint="例如：15"
+                android:inputType="number"
+                android:layout_marginTop="6dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="难度" android:textSize="14sp" android:textColor="#1A1A1A" android:layout_marginTop="16dp" />
+            <Spinner
+                android:id="@+id/spinner_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_bg"
+                android:entries="@array/difficulty_levels"
+                android:layout_marginTop="6dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="烹饪步骤" android:textSize="14sp" android:textColor="#1A1A1A" android:layout_marginTop="16dp" />
+            <EditText
+                android:id="@+id/et_steps"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="14dp"
+                android:hint="例如：&#10;1. 鸡蛋打散&#10;2. 番茄切块&#10;3. 翻炒出锅"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="6dp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="保存菜谱"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5CB58"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

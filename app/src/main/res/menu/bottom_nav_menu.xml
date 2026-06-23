@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inventory"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="食材库" />
+    <item
+        android:id="@+id/nav_ai"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="AI" />
+    <item
+        android:id="@+id/nav_recipe"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="菜谱" />
+    <item
+        android:id="@+id/nav_community"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="社区" />
+    <item android:id="@+id/nav_profile" android:icon="@android:drawable/ic_menu_manage" android:title="我的" />
+
+</menu>

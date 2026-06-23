@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#F5CB58"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="←"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布帖子"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="帖子标题"
+        android:background="@drawable/edittext_bg"
+        android:paddingHorizontal="14dp"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/et_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="帖子内容"
+        android:background="@drawable/edittext_bg"
+        android:padding="14dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginHorizontal="16dp" />
+    <Button
+        android:id="@+id/btn_pick_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="📋 选择我的菜谱"
+        android:textSize="13sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_selected_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="4dp" />
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="发布"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F5CB58"
+        android:layout_margin="16dp" />
+</LinearLayout>

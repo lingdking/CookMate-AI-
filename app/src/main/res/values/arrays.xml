@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food_categories">
+        <item>请选择类别</item>
+        <item>蔬菜</item>
+        <item>水果</item>
+        <item>肉类</item>
+        <item>乳制品</item>
+        <item>调料</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="difficulty_levels">
+        <item>简单</item>
+        <item>中等</item>
+        <item>困难</item>
+    </string-array>
+</resources>
