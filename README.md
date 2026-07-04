@@ -125,26 +125,33 @@ chat_history 对话记录表
 
 ### 6.2 核心接口地址
 
-用户相关
-注册：/api/user/register
-登录：/api/user/login
-注销账号：/api/user/{id}
-食材相关
-查询用户全部食材：/api/food/{userId}
-查询已消耗食材：/api/food/consumed/{userId}
-新增食材：/api/food
-修改食材状态：/api/food/{id}
-删除单条食材：/api/food/{id}
-清空用户全部食材：/api/food/clear/{userId}
-菜谱相关
-获取全部云端菜谱：/api/recipes
-获取个人菜谱：/api/recipes/user/{userId}
-发布菜谱：/api/recipes
-删除菜谱：/api/recipes/{id}
-社区帖子相关
-获取全部帖子：/api/posts
-发布帖子：/api/posts
-删除帖子：/api/posts/{id}
+### 用户相关
+
+* 注册：`/api/user/register`
+* 登录：`/api/user/login`
+* 注销账号：`/api/user/{id}`
+
+### 食材相关
+
+* 查询用户全部食材：`/api/food/{userId}`
+* 查询已消耗食材：`/api/food/consumed/{userId}`
+* 新增食材：`/api/food`
+* 修改食材状态：`/api/food/{id}`
+* 删除单条食材：`/api/food/{id}`
+* 清空用户全部食材：`/api/food/clear/{userId}`
+
+### 菜谱相关
+
+* 获取全部云端菜谱：`/api/recipes`
+* 获取个人菜谱：`/api/recipes/user/{userId}`
+* 发布菜谱：`/api/recipes`
+* 删除菜谱：`/api/recipes/{id}`
+
+### 社区帖子相关
+
+* 获取全部帖子：`/api/posts`
+* 发布帖子：`/api/posts`
+* 删除帖子：`/api/posts/{id}`
 
 ## 七、项目启动步骤
 
